@@ -11,3 +11,75 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  margin: 0;
+  background-image: url(../public/halloween-bg.jpeg);
+  background-size: cover;
+}
+
+.app-container{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.header-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  margin: 0;
+  min-height: 60px;
+
+}
+
+.multistep-form-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color:rgb(17, 17, 17);
+  background-repeat: repeat;
+  color: #fff;
+}
+
+.header-container h1{
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.name-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.multistep-form-paragraphs-container{
+  margin: 10px;
+}
+
+.multistep-form-survey-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.survey-title{
+  margin-top: 350px;
+  background-color: black;
+  color: rgb(250, 255, 99);
+  text-align: center;
+  font-size: 38px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 20px;
+}
+
+.survey-time{
+  font-size: 14px;
+  color:rgb(119, 119, 119);
+}
