@@ -1,16 +1,17 @@
 //Let's build your Crazy Halloween Customer together?
+//question 1 - name text input
 
-//Question 1 - Choose a character theme(Radio Button),
+//Question 2 - Choose a character theme(Radio Button),
 // Zombie, Witch, Ghost, Barbie, Pirate, Vampire, Skelekton
 
-// Question 2 - range slider - ScaryLevel
+// Question 3 - range slider - ScaryLevel
 // What level of scary do you wanna look?
 // Only babies would cry, small kids will shake a little bit, I want to pass unoticed, people will feel unconfortable looking at me, Those who look at me, will need to sleep with lights on.  
 
-// Question 3 - Choose the head accessories (select dropdown) - HeadItem
+// Question 4 - Choose the head accessories (select dropdown) - HeadItem
 //Witch hat, Pirate hat, Hair Jewerly, Cowboy hat, Bandana, Nun coif, Pink wig, None
 
-// Question 4 - (checkbox) Choose face accessories:
+// Question 5 - (checkbox) Choose face accessories:
 // Phantom mask, Monster mask, clown makeup, Día de los muertos make up, scars, blood marks, Vampire Teeth
 
 // Thank you for participating with us,
@@ -39,8 +40,8 @@
 // 4. Show different questions depending on the answer to a specific question ??should we do? no additional questions added above.
 // 5. Create a multi-step form.
 
-import { MultistepForm } from "./MultistepForm"
-import { Header } from "./Header"
+import { MultistepForm } from "./components/MultistepForm"
+import { Header } from "./components/Header"
 
 export const App = () => {
   
