@@ -1,7 +1,17 @@
-import { Name } from "./Name"
-import { RadioButton } from "./RadioButton"
+import { useState } from "react";
+import { Name } from "./Name";
+import { RadioButton } from "./Character";
 
 export const MultistepForm = () => {
+
+    const [formData, setFormData] = useState({
+        name: "",
+        characterData: "",
+        scaryLevel: "",
+        headItem: "",
+        faceItem: "",
+        email: "",
+    })
   return (
     <div className="multistep-form-container">
         <div className="multistep-form-paragraphs-container">
