@@ -1,1 +1,10 @@
-//Radio Button
+//Question 2 Radio Button
+
+export const Character = () => {
+
+    return(
+    <div className="character-container">
+        <p>Choose a character theme:</p>
+    </div>
+    )
+}
