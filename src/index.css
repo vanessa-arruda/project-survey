@@ -30,10 +30,13 @@ body {
   justify-content: flex-start;
   align-items: center;
   background-color: black;
-  color: #fff;
+  color: #ffffff;
   margin: 0;
   min-height: 50px;
+}
 
+.header-img{
+  max-width: 80px;
 }
 
 .multistep-form-container{
@@ -167,4 +170,23 @@ input[type="range"] {
   height: 30px;
   border-radius: 20px;
   margin-top: 10px;
+}
+
+/* HeadItem */
+.radio-btn-headitems{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.head-items-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.headitems-img{
+  max-width: 200px;
+  padding-right: 20px;
 }

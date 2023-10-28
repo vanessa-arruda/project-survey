@@ -2,7 +2,8 @@
 export const Header = () => {
   return (
     <div className="header-container">
-        <h1>Horror Tech</h1>
+        <img src="../public/horrortech-logo.png" className="header-img"/>
+        <h1>Custom Surveys</h1>
     </div>
   )
 };
