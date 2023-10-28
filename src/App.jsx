@@ -1,25 +1,3 @@
-//Let's build your Crazy Halloween Customer together?
-//question 1 - name text input
-
-//Question 2 - Choose a character theme(Radio Button),
-// Zombie, Witch, Ghost, Barbie, Pirate, Vampire, Skelekton
-
-// Question 3 - range slider - ScaryLevel
-// What level of scary do you wanna look?
-// Only babies would cry, small kids will shake a little bit, I want to pass unoticed, people will feel unconfortable looking at me, Those who look at me, will need to sleep with lights on.  
-
-// Question 4 - Choose the head accessories (select dropdown) - HeadItem
-//Witch hat, Pirate hat, Hair Jewerly, Cowboy hat, Bandana, Nun coif, Pink wig, None
-
-// Question 5 - (checkbox) Choose face accessories:
-// Phantom mask, Monster mask, clown makeup, Día de los muertos make up, scars, blood marks, Vampire Teeth
-
-// Thank you for participating with us,
-// Please confirm if your answers are correct.
-//Please type your email so we can send you the details.
-
-//----------------------------
-
 // Project BASIC Requirements:
 // 1. Survey should consist of at least 3 questions.
 // 2. At least one question should use radio buttons.
@@ -50,7 +28,7 @@ export const App = () => {
         <Header/>
       <section className="app-container">
           <div>
-            <h1 className="survey-title">Your Halloween Custome Creator</h1>
+            <h1 className="survey-title">Your Halloween Costume Creator</h1>
             <MultistepForm/>
           </div>
           
