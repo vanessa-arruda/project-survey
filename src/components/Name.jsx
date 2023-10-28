@@ -6,16 +6,17 @@ export const Name = ({value, updateFormData}) => {
     return (
       <div className="name-container">
             <div className="multistep-form-paragraphs-container">
-                <p>We'll help you set up a creative <b>Halloween custome</b> this year!</p>
+                <h2>We'll help you set up a creative <b>Halloween costume</b> this year!</h2>
                 <p className="survey-time">Survey takes: 1-2 minutes</p>
             </div>
-        <label htmlFor="name-input">Enter your name: </label>
-        <input 
-            id="name-input" 
-            type="text"
-            value={value}
-            onChange={userName}
-        />
+            <div className="name-input-label-container">
+                <label className="questions">Enter your name: </label>
+                <input
+                    type="text"
+                    value={value}
+                    onChange={userName}
+                />
+            </div>
       </div>
     )
   };

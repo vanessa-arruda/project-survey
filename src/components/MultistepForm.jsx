@@ -9,23 +9,22 @@ import { Email } from "./Email";
 //Define the MulstiStep component
 export const MultistepForm = () => {
     //state to store form data
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState(
+        {
         name: "",
         characterData: "",
         scaryLevel: "",
         headItem: "",
         faceItem: "",
         email: "",
-    });
-
-    console.log(MultistepForm);
-
+    }
+);
     //state to track the current step in the form (previous x next buttons)
     const [currentStep, setCurrentStep] = useState(1);
 
     //const to update the values of the object above. "...values".
     const updateFormData = (field, value) => {
-        setFormData((values) => ({...values, [field]:value}));
+        setFormData((values) => ({...values, [field] : value}));
     }
 
     const nextStep = () =>  {
@@ -41,17 +40,18 @@ export const MultistepForm = () => {
     }
 
     const submitForm = () => {
+
         const submittedData = `
         Name: ${formData.name}
         Type of costume: ${formData.characterData}
         Scary Level: ${formData.scaryLevel}
         Head accessory: ${formData.headItem}
         Face accesorry: ${formData.faceItem}
-        Email: ${email}
+        Email: ${formData.email}
         `
-        console.log(submittedData);
         alert(submittedData);
     }
+    console.log(formData);
   return (
     <div className="multistep-form-container">
         <div className="multistep-form-survey-container">
@@ -76,12 +76,13 @@ export const MultistepForm = () => {
            )}
         </div>
             
+        {/* handle the buttons next, previous and submit*/}
         <div className="multistep-form-buttons-container">
             {currentStep > 1 && (
-                <button onClick={previousStep}>Back</button>
+                <button onClick={previousStep} className="back-btn">Back</button>
             )}
             {currentStep < 6 ?
-                <button onClick={nextStep}>Next</button> : <button onCLick={submitForm}>Submit</button>
+                <button onClick={nextStep} className="next-btn">Next</button> : <button onCLick={submitForm} className="submit-btn">Submit</button>
             }
         </div>
     </div>
