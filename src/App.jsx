@@ -50,7 +50,7 @@ export const App = () => {
         <Header/>
       <section className="app-container">
           <div>
-            <h1 className="survey-title">Halloween Survey</h1>
+            <h1 className="survey-title">Your Halloween Custome Creator</h1>
             <MultistepForm/>
           </div>
           
