@@ -11,14 +11,14 @@ export const MultistepForm = () => {
     //state to store form data
     const [formData, setFormData] = useState(
         {
-        name: "",
-        characterData: "",
-        scaryLevel: "",
-        headItem: "",
-        faceItem: "",
-        email: "",
-    }
-);
+            name: "",
+            characterData: "",
+            scaryLevel: "",
+            headItem: "",
+            faceItem: "",
+            email: "",
+        }
+    );
     //state to track the current step in the form (previous x next buttons)
     const [currentStep, setCurrentStep] = useState(1);
 
@@ -60,7 +60,7 @@ export const MultistepForm = () => {
            <Name value={formData.name} updateFormData={updateFormData}/>
            )}
            {currentStep === 2 && (
-           <Character value={formData.characterData} updateFormData={updateFormData}/>
+           <Character name={formData.name} value={formData.characterData} updateFormData={updateFormData}/>
            )}
            {currentStep === 3 && (
             <ScaryLevel value={formData.scaryLevel} updateFormData={updateFormData}/>

@@ -6,9 +6,9 @@ export const ScaryLevel = ({updateFormData}) => {
 
     const scaryLevelData = (e) => updateFormData("scaryLevel", e.target.value); 
     const scaryLevelOptions = [
-        "Baby Halloween",
-        "Kids trick or treat school event",
-        "Average adult scary party",
+        "Baby Halloween.",
+        "Kids trick or treat school event.",
+        "Average adult scary party.",
         "I want them to be afraid of me!",
         "I'll make them sleep with lights on!"
     ]
