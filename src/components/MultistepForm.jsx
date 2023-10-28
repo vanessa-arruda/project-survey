@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { Name } from "./Name";
 import { Character } from "./Character";
+import { ScaryLevel } from "./ScaryLevel";
+import { HeadItem } from "./HeadItem";
+import { FaceItem } from "./FaceItem";
+import { Email } from "./Email";
 
 //Define the MulstiStep component
 export const MultistepForm = () => {
@@ -13,6 +17,8 @@ export const MultistepForm = () => {
         faceItem: "",
         email: "",
     });
+
+    console.log(MultistepForm);
 
     //state to track the current step in the form (previous x next buttons)
     const [currentStep, setCurrentStep] = useState(1);
@@ -43,6 +49,7 @@ export const MultistepForm = () => {
         Face accesorry: ${formData.faceItem}
         Email: ${email}
         `
+        console.log(submittedData);
         alert(submittedData);
     }
   return (
@@ -56,7 +63,7 @@ export const MultistepForm = () => {
            <Character value={formData.characterData} updateFormData={updateFormData}/>
            )}
            {currentStep === 3 && (
-            <scaryLevel value={formData.scaryLevel} updateFormData={updateFormData}/>
+            <ScaryLevel value={formData.scaryLevel} updateFormData={updateFormData}/>
            )}
             {currentStep === 4 && (
             <HeadItem value={formData.headItem} updateFormData={updateFormData}/>
@@ -68,7 +75,7 @@ export const MultistepForm = () => {
             <Email value={formData.email} updateFormData={updateFormData}/>
            )}
         </div>
-
+            
         <div className="multistep-form-buttons-container">
             {currentStep > 1 && (
                 <button onClick={previousStep}>Back</button>
