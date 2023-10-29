@@ -82,7 +82,7 @@ export const MultistepForm = () => {
                 <button onClick={previousStep} className="back-btn">Back</button>
             )}
             {currentStep < 6 ?
-                <button onClick={nextStep} className="next-btn">Next</button> : <button onCLick={submitForm} className="submit-btn">Submit</button>
+                <button onClick={nextStep} className="next-btn">Next</button> : <button onClick={submitForm} className="submit-btn">Submit</button>
             }
         </div>
     </div>

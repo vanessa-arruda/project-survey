@@ -2,7 +2,12 @@
 export const Email = ({value, updateFormData}) => {
 
     const userEmail = (e) => updateFormData("email", e.target.value);
-
+    const checkEmail = (e) => {
+        const str = e.target.value;
+        const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if(!re.test(str))
+        alert("Please enter a valid email address");
+    }
     return (
       <div className="email-container">
             <div>
@@ -14,6 +19,7 @@ export const Email = ({value, updateFormData}) => {
             type="email"
             value={value}
             onChange={userEmail}
+            onBlur={checkEmail}
         />
       </div>
     )
