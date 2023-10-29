@@ -98,6 +98,7 @@ body {
   height: 30px;
   border-radius: 20px;
   border: none;
+  padding: 0 1em;
 }
 
 .survey-title{
@@ -189,4 +190,9 @@ input[type="range"] {
 .headitems-img{
   max-width: 200px;
   padding-right: 20px;
+}
+
+.stepProgress{
+  color: #fff;
+  text-align: right;
 }
