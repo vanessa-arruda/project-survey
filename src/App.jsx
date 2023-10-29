@@ -27,7 +27,7 @@ export const App = () => {
     <div>
         <Header/>
       <section className="app-container">
-          <div>
+          <div className="appContent">
             <h1 className="survey-title">Your Halloween Costume Creator</h1>
             <MultistepForm/>
           </div>
