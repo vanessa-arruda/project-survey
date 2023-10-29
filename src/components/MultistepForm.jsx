@@ -45,8 +45,7 @@ export const MultistepForm = () => {
         const submittedData = `
         Name: ${formData.name}
         Type of costume: ${formData.characterData}
-        Scary Level: ${formData.scaryLevel}
-        Head accessory: ${formData.headItem}
+        ${formData.characterData === "Zombie" ? `Scary Level: ${formData.scaryLevel}` : ``}${formData.characterData === "Ghost" ? `Head accessory: ${formData.headItem}` : ``}
         Face accesorry: ${formData.faceItem}
         Email: ${formData.email}
         `
@@ -64,15 +63,19 @@ export const MultistepForm = () => {
            <Character name={formData.name} value={formData.characterData} updateFormData={updateFormData}/>
            )}
            {currentStep === 3 && (
-            <ScaryLevel value={formData.scaryLevel} updateFormData={updateFormData}/>
+            <>
+                {formData.characterData === "Zombie" && (
+                    <ScaryLevel value={formData.scaryLevel} updateFormData={updateFormData} />
+                )}
+                {formData.characterData === "Ghost" && (
+                    <HeadItem value={formData.headItem} updateFormData={updateFormData} />
+                )}
+            </>
            )}
             {currentStep === 4 && (
-            <HeadItem value={formData.headItem} updateFormData={updateFormData}/>
-           )}
-            {currentStep === 5 && (
             <FaceItem value={formData.faceItem} updateFormData={updateFormData}/>
            )}
-            {currentStep === 6 && (
+            {currentStep === 5 && (
             <Email value={formData.email} updateFormData={updateFormData}/>
            )}
         </div>
@@ -82,12 +85,12 @@ export const MultistepForm = () => {
             {currentStep > 1 && (
                 <button onClick={previousStep} className="back-btn">Back</button>
             )}
-            {currentStep < 6 ?
+            {currentStep < 5 ?
                 <button onClick={nextStep} className="next-btn">Next</button> : <button onClick={submitForm} className="submit-btn">Submit</button>
             }
         </div>
     </div>
-    <StepProgress currentStep={currentStep} totalSteps={6} />
+    <StepProgress currentStep={currentStep} totalSteps={5} />
     </>
   )
 };
