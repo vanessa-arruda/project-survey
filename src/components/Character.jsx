@@ -8,7 +8,7 @@ export const Character = ({updateFormData, value, name}) => {
             <p>Hi, {name}!</p>
             <label className="questions">Choose one of the main character you'd like to be:</label>
             <select value={value} onChange={characterData} className="select-btn">
-                <option value="">Select item</option>>
+                <option value="">Select item</option>
                 <option value="Ghost">Ghost</option>
                 <option value="Zombie">Zombie</option>
             </select>
