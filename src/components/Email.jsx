@@ -15,6 +15,7 @@ export const Email = ({value, updateFormData}) => {
             </div>
         <label htmlFor="email-input">Email: </label>
         <input 
+            className="email-input"
             id="email-input" 
             type="email"
             value={value}
