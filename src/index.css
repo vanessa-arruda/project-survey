@@ -194,6 +194,13 @@ input[type="range"] {
 .headitems-img{
   max-width: 200px;
   padding-right: 20px;
+
+}
+
+@media (max-width:641px)  {
+  .headitems-img {
+      width: 125px;
+  }
 }
 
 .stepProgress{
@@ -211,6 +218,10 @@ input[type="range"] {
 
 .invalidMsg {
   color: red;
+}
+
+.survey-container{
+  max-width: 550px;
 }
 
 @media screen and (max-width: 750px) {
