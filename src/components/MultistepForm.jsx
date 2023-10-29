@@ -5,6 +5,7 @@ import { ScaryLevel } from "./ScaryLevel";
 import { HeadItem } from "./HeadItem";
 import { FaceItem } from "./FaceItem";
 import { Email } from "./Email";
+import { StepProgress } from './stepProgress';
 
 //Define the MulstiStep component
 export const MultistepForm = () => {
@@ -52,7 +53,7 @@ export const MultistepForm = () => {
         alert(submittedData);
     }
     console.log(formData);
-  return (
+  return (<>
     <div className="multistep-form-container">
         <div className="multistep-form-survey-container">
             {/* render the Name component if on step 1 and so on*/}
@@ -86,5 +87,7 @@ export const MultistepForm = () => {
             }
         </div>
     </div>
+    <StepProgress currentStep={currentStep} totalSteps={6} />
+    </>
   )
 };
