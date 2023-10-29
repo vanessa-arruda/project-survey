@@ -17,7 +17,7 @@ export const MultistepForm = () => {
             characterData: "",
             scaryLevel: "",
             headItem: "",
-            faceItem: "",
+            faceItem: [],
             email: "",
         }
     );
