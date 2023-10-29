@@ -47,6 +47,7 @@ body {
   background-repeat: repeat;
   color: #fff;
   flex-wrap: wrap;
+  padding : 2em ;
 }
 
 .header-container h1{
@@ -195,4 +196,12 @@ input[type="range"] {
 .stepProgress{
   color: #fff;
   text-align: right;
+}
+
+.email-input {
+  margin-bottom: 20px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  padding: 0 1em;
 }
