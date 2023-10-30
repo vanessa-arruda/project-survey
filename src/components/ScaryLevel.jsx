@@ -6,11 +6,11 @@ export const ScaryLevel = ({updateFormData}) => {
 
     const scaryLevelData = (e) => updateFormData("scaryLevel", e.target.value); 
     const scaryLevelOptions = [
-        "Baby Halloween.",
-        "Kids trick or treat school event.",
-        "Average adult scary party.",
-        "I want them to be afraid of me!",
-        "I'll make them sleep with lights on!"
+        "Baby Halloween",
+        "Kids trick or treat school event",
+        "Average adult scary party",
+        "I want them to be afraid of me",
+        "I'll make them sleep with lights on"
     ]
 
     const handleValueChange = (value) => {
@@ -19,8 +19,9 @@ export const ScaryLevel = ({updateFormData}) => {
     }
 
     return (
-        <div>
-            <p className="questions">What level of scary do you wanna look like?</p>
+        <div className="slider-main-container">
+            <p className="questions">Zombie right?</p>
+            <p className="questions">In this case, what level of scary do you wanna look like?</p>
             <div className="slider-container">
                 <input 
                 type="range"

@@ -7,7 +7,9 @@ export const HeadItem = ({updateFormData, value, name, }) => {
 
     return (
         <div>
-            <p className="questions">Choose one head accessory you want to use:</p>
+            <p className="questions">You want to go traditional ghost and boo people around!</p>
+            <p className="questions ghost">Thats, cool!</p>
+            <p className="questions">Let's just add a head accessory? what you want to use:</p>
             <div className="head-items-container">
                 <div>
                     <img src={funImgUrl} className="headitems-img"/>

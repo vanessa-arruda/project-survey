@@ -1,4 +1,4 @@
-import logoUrl from '../../public/horrortech-logo.png';
+import logoUrl from '../../public/horrortech-logo.jpeg';
 
 export const Header = () => {
   return (

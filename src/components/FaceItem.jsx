@@ -3,6 +3,7 @@
 // Phantom mask, Monster mask, clown makeup, Día de los muertos make up, scars, blood marks, Vampire Teeth
 
 export const FaceItem = ({ value, updateFormData }) => {
+    const faceItemUrl="https://media.giphy.com/media/da7JVUDLQfB645dZ8T/giphy.gif";
     // Define an array of available face accessories
     const accessories = [
       "Phantom mask",
@@ -26,7 +27,8 @@ export const FaceItem = ({ value, updateFormData }) => {
   
     return (
       <div>
-        <p>Choose your face accessories:</p>
+        <p className="questions">Let's also add some make up and/or face accessories to finish?</p>
+        <p className="questions">Choose what you want to use below: </p>
         {accessories.map(accessory => (
           <div>
             <label key={accessory} htmlFor={accessory}>
@@ -41,6 +43,9 @@ export const FaceItem = ({ value, updateFormData }) => {
             </label>
           </div>
         ))}
+        <div className="faceitems-img-container">
+          <img src={faceItemUrl} className="faceitems-img"/>
+        </div>
       </div>
     );
   };
