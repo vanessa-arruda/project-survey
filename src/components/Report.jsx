@@ -16,8 +16,7 @@ export const Report = ({ formData }) => {
                         <><b>Head accessory: </b> {formData.headItem}</>
                     ) : ``}</div>
                 <div>
-                <b>Face accessory:</b> {formData.faceItem.slice(0, -1).join(", ")}
-                {formData.faceItem.length > 1 && `, ${formData.faceItem[formData.faceItem.length - 1]}`}
+                <b>Face accessory:</b> {formData.faceItem.join(", ")}
                 </div>
 
                 <div><b>Email:</b> {formData.email}</div>
