@@ -24,6 +24,16 @@ body {
   margin: 0;
 }
 
+/* label */
+.label-name{
+  display: flex;
+  flex-direction: column;
+}
+
+.label-name input{
+  margin-top: 20px;
+}
+
 .header-container{
   display: flex;
   justify-content: flex-start;

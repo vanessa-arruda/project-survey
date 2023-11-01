@@ -22,10 +22,11 @@ export const ScaryLevel = ({updateFormData}) => {
         <div className="slider-main-container">
             <p className="questions">Zombie right?</p>
             <p className="questions">In this case, what level of scary do you wanna look like?</p>
-            <div className="slider-container">
+            <div id="scaryLevel" className="slider-container">
                 <input 
                 type="range"
                 className="slider-bar"
+                aria-labelledby="scaryLevel"
                 step="1"
                 min="0"
                 max="4"

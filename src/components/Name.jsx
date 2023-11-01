@@ -10,12 +10,12 @@ export const Name = ({value, updateFormData}) => {
                 <p className="survey-time">Survey takes: 1-2 minutes</p>
             </div>
             <div className="name-input-label-container">
-                <label className="questions">Enter your name: </label>
+                <label className="questions label-name">Enter your name: 
                 <input
                     type="text"
                     value={value}
                     onChange={userName}
-                />
+                /></label>
             </div>
       </div>
     )
