@@ -14,7 +14,7 @@ export const HeadItem = ({updateFormData, value, name, }) => {
                 <div>
                     <img src={funImgUrl} className="headitems-img"/>
                 </div>
-                <div value={value} onChange={chosenHeadItem} className="radio-btn-headitems">
+                <form value={value} onChange={chosenHeadItem} className="radio-btn-headitems">
                     <div>
                         <input type="radio" id="bandana" name="headItem" value="bandana"/><label htmlFor="bandana">Bandana</label>
                     </div>
@@ -45,7 +45,7 @@ export const HeadItem = ({updateFormData, value, name, }) => {
                     <div>
                     <input type="radio" name="headItem" value="none"/><label htmlFor="none">None</label>
                     </div>
-                </div>
+                </form>
 
             </div>
         </div>

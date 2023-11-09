@@ -4,7 +4,7 @@ export const Character = ({updateFormData, value, name}) => {
     const characterData = (e) => updateFormData("characterData", e.target.value);
 
     return (
-        <div className="character-question-container">
+        <form className="character-question-container">
             <p className="questions">Hi, {name}!</p>
             <label className="questions">Choose one of the main character you'd like to be:
             <select value={value} onChange={characterData} className="select-btn">
@@ -13,6 +13,6 @@ export const Character = ({updateFormData, value, name}) => {
                 <option value="Zombie">Zombie</option>
             </select>
             </label>
-        </div>
+        </form>
     )
 }

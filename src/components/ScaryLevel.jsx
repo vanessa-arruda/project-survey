@@ -22,7 +22,7 @@ export const ScaryLevel = ({updateFormData}) => {
         <div className="slider-main-container">
             <p className="questions">Zombie right?</p>
             <p className="questions">In this case, what level of scary do you wanna look like?</p>
-            <div id="scaryLevel" className="slider-container">
+            <form id="scaryLevel" className="slider-container">
                 <input 
                 type="range"
                 className="slider-bar"
@@ -33,7 +33,7 @@ export const ScaryLevel = ({updateFormData}) => {
                 value={scaryLevel}
                 onChange={(e) => handleValueChange(e.target.value)}>
                 </input>
-            </div>
+            </form>
             <div>
                 <p className="scary-level-options">{scaryLevelOptions[scaryLevel]}</p>
             </div>

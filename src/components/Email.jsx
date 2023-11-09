@@ -11,7 +11,7 @@ export const Email = ({value, updateFormData}) => {
         setIsEmailInvalid(!re.test(str));
     }
     return (
-      <div className="email-container">
+      <form className="email-container">
             <div>
                 <p>Glad you made it! You will have an unique and awesome custome! Please type your email and submit the form to receive the result.</p>
             </div>
@@ -25,6 +25,6 @@ export const Email = ({value, updateFormData}) => {
             onBlur={checkEmail}
         />
         {isEmailInvalid && <div className="invalidMsg">Please enter a valid email address</div>}
-      </div>
+      </form>
     )
   };
