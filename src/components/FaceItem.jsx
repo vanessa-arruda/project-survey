@@ -30,7 +30,7 @@ export const FaceItem = ({ value, updateFormData }) => {
         <p className="questions">Let's also add some make up and/or face accessories to finish?</p>
         <p className="questions">Choose what you want to use below: </p>
         {accessories.map(accessory => (
-          <div>
+          <form>
             <label key={accessory} htmlFor={accessory}>
                 <input
                 id={accessory}
@@ -41,7 +41,7 @@ export const FaceItem = ({ value, updateFormData }) => {
                 />
                 {accessory}
             </label>
-          </div>
+          </form>
         ))}
         <div className="faceitems-img-container">
           <img src={faceItemUrl} className="faceitems-img"/>
